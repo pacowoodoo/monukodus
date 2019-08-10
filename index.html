@@ -322,6 +322,9 @@
 
     <script>
         $(document).ready(function(){
+            setTimeout(function(){  var mySudokuJS = $("#sudoku").sudokuJS({
+                                difficulty: "medium"
+                            }) }, 2000);
           // Add smooth scrolling to all links
           $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
 
@@ -344,9 +347,7 @@
               });
             } // End if
           });
-          var mySudokuJS = $("#sudoku").sudokuJS({
-                                difficulty: "medium" //("easy"|"medium"|"hard"|"very hard")
-                            });
+          
         });
     </script>
 
